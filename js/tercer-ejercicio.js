@@ -1,15 +1,15 @@
 /*3- Escribir un script que simule el lanzamiento de dos dados. Hacer uso de la función Math.random para obtener números aleatorios
- entre 1 y 6 para cada uno de los lanzamientos de los dados. Sumar el resultado de lanzar dos dados y anotar en un array el número de 
+ entre 1 y 6 para cada uno de los apariciones de los dados. Sumar el resultado de lanzar dos dados y anotar en un array el número de 
  apariciones de dicha suma, repitiendo 50 veces esta operación.
 */
 
 
 // Declaro variable para guardar elementos del array
-let lanzamientos = [];
+let apariciones = [];
 
 //Inicia array con buclw for
 for (let i = 0; i < 13; i++) {
-  lanzamientos[i] = 0;
+  apariciones[i] = 0;
 }
 
 // Declaro variabls para guardar el resultado de los dados uno y dos
@@ -26,31 +26,31 @@ for (let i = 0; i < 50; i++) {
   suma = dadoUno + dadoDos;
 
   // ingremento en uno lanzam
-  lanzamientos[suma]++;
+  apariciones[suma]++;
 }
+document.write('<h4 >Escribir un script que simule el lanzamiento de dos dados. Hacer uso de la función Math.random para obtener números aleatorios entre 1 y 6 para cada uno de los apariciones de los dados. Sumar el resultado de lanzar dos dados y anotar en un array el número de apariciones de dicha suma, repitiendo 50 veces esta operación.</h4>')
 
-document.write('<h4 >Escribir un script que simule el lanzamiento de dos dados. Hacer uso de la función Math.random para obtener números aleatorios entre 1 y 6 para cada uno de los lanzamientos de los dados. Sumar el resultado de lanzar dos dados y anotar en un array el número de apariciones de dicha suma, repitiendo 50 veces esta operación.</h4>')
 // tabla para mostrar por pantalla 
 document.write('<div class="container">');
 document.write('<table><thead>');
 
 document.write('<tr>');
 document.write('<th>Suma</th>');
-document.write('<th>Frecuencia</th>');
+document.write('<th>Apariciones</th>');
 document.write('</tr>');
 document.write('</thead>');
 
 document.write('<tbody>');
 
 // recorro array y escribo la cantidad de filas
-for (let i = 2; i < lanzamientos.length; i++) {
+for (let i = 2; i < apariciones.length; i++) {
   
     //fila tr
     document.write('<tr>');
 
     // celda td
     document.write(`<td class="d-flex justify-content-center"> ${ i } </td>`);
-    document.write(`<td> ${lanzamientos[i]} </td>`);
+    document.write(`<td> ${apariciones[i]} </td>`);
 
     document.write('</tr>');
 }
@@ -60,13 +60,13 @@ document.write('</table></tbody>');
 document.write('</div>');
 
 
-// let cantidadLanzamientos = parseInt(prompt('Ingresar la cantidad de veces que desea arrojar los dados'));
+// let cantidadapariciones = parseInt(prompt('Ingresar la cantidad de veces que desea arrojar los dados'));
 
 //variable del array:
-// let lanzamientos = [];
+// let apariciones = [];
 //  //incicializo vueltas del bucle for para el array
 //  for (let indice = 0 ; indice <= 13; indice++) {
-//     document.write(lanzamientos[indice]= 0);
+//     document.write(apariciones[indice]= 0);
     
 //  }
 
